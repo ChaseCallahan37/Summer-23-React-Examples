@@ -13,9 +13,17 @@ console.log(firstName);
 let age: number;
 let student: boolean;
 let adddress: string;
+let students: string[];
+
+//We can also declare things other than primitive types like
+//The ones above
+
 let table: HTMLElement;
 
-//This prevents us from accidently assigning wrong data types
-//to variables, much like C#
+table = document.createElement("table");
 
-age = 3;
+//We can also use the any type, which is the same as not
+//specifying a type at all
+
+let car: any = "Ford";
+car = 4;

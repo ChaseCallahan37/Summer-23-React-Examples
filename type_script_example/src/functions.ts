@@ -1,16 +1,8 @@
 //You can also apply type checking to paramaters
 
-const determineIsOld = function (age: number, firstName: string) {
-  let isOld = false;
-  if (age > 100) {
-    isOld = true;
-  }
+function convertToDogYears(age: number, firstName: string) {
+  let dogYears = age * 7;
+  console.log(`The age of ${firstName} in dog years is ${dogYears}`);
+}
 
-  if (isOld) {
-    console.log(firstName + " is old, they are " + age);
-  } else {
-    console.log(firstName + " is not old, they are " + age);
-  }
-};
-
-determineIsOld(21, "Chase");
+convertToDogYears(21, "Chase");
